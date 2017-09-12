@@ -53,3 +53,6 @@ initRoutes(app); //TODO: commented this as need to know for the express rounting
 app.get('*', renderMiddleware);
 
 app.listen(app.get('port'));
+
+
+
