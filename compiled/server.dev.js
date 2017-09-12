@@ -9603,11 +9603,11 @@ exports.default = function (app) {
   //                  However, it requires an https-enabled website, i.e., HTTPS is necessary for secure cookies.
   //                  If secure is set, and you access your site over HTTP, the cookie will not be set.
   var sessionStore = null;
-  if (!_db.session) {
-    console.warn((0, _unsupportedMessage2.default)('session'));
+  /*if (!dbSession) {
+    console.warn(unsupportedMessage('session'));
   } else {
-    sessionStore = (0, _db.session)();
-  }
+    sessionStore = dbSession();
+  }*/
 
   var sess = {
     resave: false,

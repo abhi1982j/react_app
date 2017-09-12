@@ -55,11 +55,11 @@ export default (app) => {
   //                  However, it requires an https-enabled website, i.e., HTTPS is necessary for secure cookies.
   //                  If secure is set, and you access your site over HTTP, the cookie will not be set.
   let sessionStore = null;
-  if (!dbSession) {
+  /*if (!dbSession) {
     console.warn(unsupportedMessage('session'));
   } else {
     sessionStore = dbSession();
-  }
+  }*/
 
   const sess = {
     resave: false,
