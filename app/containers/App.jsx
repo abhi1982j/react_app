@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '../components/Header'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 /*
@@ -12,17 +13,18 @@ import Header from '../components/Header'
  * A better explanation of react-router is available here:
  * https://github.com/rackt/react-router/blob/latest/docs/Introduction.md
  */
-const App = ({ children }) => {
-  return (
-    <div>
-      <Header />
-      {children}
-    </div>
-  );
+const App = ({children}) => {
+    return (
+        <div>
+            <Header />
+            {children}
+            <Footer />
+        </div>
+    );
 };
 
 App.propTypes = {
-  children: PropTypes.object
+    children: PropTypes.object
 };
 
 export default App;

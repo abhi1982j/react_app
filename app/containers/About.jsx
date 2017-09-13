@@ -8,6 +8,7 @@ import React from 'react';
 const About = (props) => {
   return (
     <div >
+        {"This data is rendering from Ajax response"}
         <ul>
         {Object.keys(props.userList).map((key, index)=>{
             return(
