@@ -26,7 +26,7 @@ function onUpdate() {
   // still trigger a fetch data.
   // Read more: https://github.com/choonkending/react-webpack-node/pull/203#discussion_r60839356
   if (window.__INITIAL_STATE__ !== null) {
-    //window.__INITIAL_STATE__ = null;
+    window.__INITIAL_STATE__ = null;
     return;
   }
 
