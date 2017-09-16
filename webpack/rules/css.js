@@ -62,8 +62,10 @@ module.exports = ({ production = false, browser = false } = {}) => {
   const browserLoaders = createBrowserLoaders(production)(createCssLoaders(true));
 */
   return {
-    test: /\.(sass|scss)$/,
-    use: ExtractTextPlugin.extract(['css-loader', 'sass-loader']),
+      test: /.(sass|scss)$/,
+      use: ExtractTextPlugin.extract({
+          use: ['css-loader', 'sass-loader']
+      }),
     include: PATHS.app
   };
 };

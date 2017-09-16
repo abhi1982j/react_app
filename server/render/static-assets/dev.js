@@ -5,7 +5,11 @@ const createAppScript = () => '<script async type="text/javascript" charset="utf
 
 
 const createAppCSS = () => {
-    return '<link rel= "stylesheet" type="text/css" href="assets/styles/bundle.css">'
+    return '<link rel= "stylesheet" type="text/css" href="assets/styles/styles.css">'
+};
+
+const createBootstrapCSS = () => {
+    return '<link rel= "stylesheet" type="text/css" href="assets/styles/bootstrap.css">'
 };
 
 const createTrackingScript = () => GOOGLE_ANALYTICS_ID ? createAnalyticsSnippet(GOOGLE_ANALYTICS_ID) : '';
@@ -20,5 +24,5 @@ ga('send', 'pageview');
 
 const createStylesheets = () => '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed" />';
 
-export { createAppScript, createTrackingScript, createStylesheets, createAppCSS };
+export { createAppScript, createTrackingScript, createStylesheets, createBootstrapCSS, createAppCSS };
 

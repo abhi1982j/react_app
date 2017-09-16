@@ -59,10 +59,10 @@ module.exports = (env = {}) => {
     const devBrowserRender = {
         devtool: 'eval',
         context: PATHS.app,
-        entry: ['./client', "./styles/app.scss"],
+        entry: {app:['./client'], styles:"./styles/app.scss", bootstrap: './styles/bootstrap.scss'},
         output: {
             path: PATHS.assets,
-            filename: 'app.js',
+            filename: '[name].js',
             publicPath: PATHS.public
         },
         module: { rules: rules({ production: false, browser: true }) },

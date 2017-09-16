@@ -20,7 +20,9 @@ module.exports = ({ production = false, browser = false } = {}) => {
       new webpack.DefinePlugin(compileTimeConstantForMinification),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NoEmitOnErrorsPlugin(),
-      new ExtractTextPlugin('./styles/bundle.css')
+        new ExtractTextPlugin({
+            filename: 'styles/[name].css' //generates "app.css" and "bootstrap.css" files
+        })
     ];
   }
   if (production && !browser) {
