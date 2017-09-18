@@ -1,6 +1,8 @@
 node_modules
-compiled
+npm-debug.log
+.tmp
 .idea
-app/styles/*.css
-app/styles/*.css.map
 public
+compiled
+*.swp
+.vscode
